@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tareas = [
-        { id: 1, descripcion: 'Tarea 1', completada: false },
-        { id: 2, descripcion: 'Tarea 2', completada: false }
+        { id: 1, descripcion: 'Tarea Nro: 1', completada: false },
+        { id: 2, descripcion: 'Tarea Nro: 2', completada: false }
     ];
 
     const listaTareas = document.getElementById('lista-tareas');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="descripcion">${tarea.descripcion}</span>
                 <div class="acciones">
                     <input type="checkbox" ${tarea.completada ? 'checked' : ''} onchange="toggleTarea(${tarea.id})">
-                    <button onclick="borrarTarea(${tarea.id})">Borrar</button>
+                    <button onclick="borrarTarea(${tarea.id})">Eliminar</button>
                 </div>
             `;
             listaTareas.appendChild(tareaItem);

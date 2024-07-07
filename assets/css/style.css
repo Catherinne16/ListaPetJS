@@ -28,6 +28,8 @@ ul {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    border-radius: inherit;
+    
 }
 
 .tarea.completada .descripcion {
@@ -43,4 +45,33 @@ button {
 .acciones {
     display: flex;
     align-items: center;
+}
+
+/* Estilos personalizados para el checkbox */
+input[type="checkbox"] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ebd1e1;
+    border: 2px solid #0f000b;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #f895c6; /* Color rosa pastel */
+    border-color: #ffb6c1;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 2px;
 }
