@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tareas = [
         { id: 1, descripcion: 'Tarea Nro: 1', completada: false },
-        { id: 2, descripcion: 'Tarea Nro: 2', completada: false }
+        { id: 2, descripcion: 'Tarea Nro: 2', completada: true  },
+        { id: 3, descripcion: 'Tarea Nro: 3', completada: false },
+        { id: 4, descripcion: 'Tarea Nro: 4', completada: false },
     ];
 
     const listaTareas = document.getElementById('lista-tareas');
