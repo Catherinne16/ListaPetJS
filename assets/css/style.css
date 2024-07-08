@@ -18,6 +18,11 @@ body {
     text-align: center;
     font-family: initial;
 }
+
+h1 {
+    color: darkviolet;
+}
+
 ul {
     padding: 20px;
 }
@@ -55,13 +60,13 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     background-color: #ebd1e1;
-    border: 2px solid #0f000b;
+    border: 3px solid #0f000b;
     border-radius: 4px;
     cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
-    background-color: #f895c6; /* Color rosa pastel */
+    background-color: #f895c6;
     border-color: #ffb6c1;
 }
 
@@ -72,6 +77,43 @@ input[type="checkbox"]:checked::after {
     left: 4px;
     width: 8px;
     height: 8px;
-    background-color: white;
-    border-radius: 2px;
+    background-color: rgb(189, 41, 194);
+    border-radius: 10px;
+}
+
+/* Estilos para los títulos de la lista de tareas */
+.titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.titulos .titulo {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos para las tareas */
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5eff4; /* Color de fondo alternativo */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.tarea .acciones {
+    display: flex;
+    align-items: center;
+}
+
+.tarea input[type="checkbox"] {
+    margin-right: 10px;
 }
