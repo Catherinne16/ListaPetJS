@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tareas = [
-        { id: 1, descripcion: 'Tarea Nro: 1', completada: false },
-        { id: 2, descripcion: 'Tarea Nro: 2', completada: true  },
-        { id: 3, descripcion: 'Tarea Nro: 3', completada: false },
-        { id: 4, descripcion: 'Tarea Nro: 4', completada: true  },
+        { id: 1, descripcion: 'Deslanado', completada: false },
+        { id: 2, descripcion: 'Corte de uñas', completada: true  },
+        { id: 3, descripcion: 'Corte de pelo', completada: false },
+        { id: 4, descripcion: 'Baño', completada: true  },
+        { id: 5, descripcion: 'Secado con Turbina', completada: true  },
+        { id: 6, descripcion: 'Cepillado', completada: true  },
+        { id: 7, descripcion: 'Arreglo de detalles menores', completada: true  },
     ];
 
     const listaTareas = document.getElementById('lista-tareas');
